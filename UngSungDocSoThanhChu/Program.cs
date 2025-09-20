@@ -65,15 +65,17 @@ namespace UngSungDocSoThanhChu
             {
                 Console.Write(chuTram + " tram ");
             }
-            if (chuc > 0)
-            {
-                Console.Write(chuChuc + " muoi ");
-            }
-            else
-                if ((tram > 0) && (donVi > 0))
-            {
-                Console.Write("le ");
-            }
+            if ((chuc == 1)){ Console.Write("muoi "); }
+            else 
+                if (chuc > 0)
+                {
+                    Console.Write(chuChuc + " muoi ");
+                }
+                else
+                    if ((tram > 0) && (donVi > 0))
+                {
+                    Console.Write("le ");
+                }
             if (donVi > 0)
             {
                 if ((donVi == 5) && (chuc > 0))
